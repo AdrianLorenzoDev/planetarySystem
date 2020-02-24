@@ -18,7 +18,6 @@ public class PlanetarySystemController {
    
    public Planet[] getRandomPlanets(float starRadius, Vector starPosition) {
      Planet[] planets = new Planet[int(random(5, 9))];
-     print(starPosition.getX() - starRadius);
      float distance = starPosition.getX() - starRadius - starRadius*4.5;
      
      for (int i = 0; i < planets.length; i++) {

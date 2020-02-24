@@ -71,17 +71,6 @@ Para generar el sistema planetario, se ha elegido seguir **un patrón pseudo-ale
 
 Para evitar que exista superposición ente figuras (y por tanto, una colisión en un escenario real), se ha decidido dejar un espacio considerable entre los cuerpos celestes. Por otra parte, también se escoge de entre la paleta de colores creadas para los cuerpos celestes correspondientes, una opción pseudoaleatoria.
 
-```java
-Point currentPoint = points.get(i+1).getTranslatedPoint(origin);
-
-for (float rad = 0; rad < 2*PI; rad += PI/64) {
-  solid.vertex(
-    currentPoint.getX() * cos(rad) - zValue * sin(rad), 
-    currentPoint.getY(), 
-    currentPoint.getX() * sin(rad) + zValue * cos(rad)
-  );
-}
-```
 
 ## Herramientas y recursos utilizados <a id="tools-and-resources"></a>
 - [Giphy](https://giphy.com) - Herramienta usada para la creación de gifs a partir de los frames de la aplicación.
